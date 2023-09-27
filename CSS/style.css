@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
+
+/* Car Info Section Styles */
+.car-info {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row1 {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.row2 {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+/* Text and image styles */
+.row1 h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.row1 span {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: rgb(91, 138, 154);
+}
+
+.row1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.row2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row1,
+    .row2 {
+        max-width: 100%;
+    }
+}
+
+
+/*  */
+header {
+    background-color: #0c0b0b;
+    color: #030303;
+    /* padding: 20px; */
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* Add border here */
+    border-radius: 2px;
+
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style-type: none;
+    box-sizing: border-box;
+    border-radius: 2px solid black;
+}
+
+nav ul img {
+
+    padding-right: 120px;
+    height: 80px;
+    width: 150px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f3f1f1;
+}
+
+/* Search bar styles */
+.search-bar {
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+
+#search-input {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: rgb(104, 202, 235);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+#search-button:hover {
+    background-color: #0b0303;
+}
+
+nav ul li a:hover {
+    color: rgb(104, 202, 235);
+}
+
+.car-info {
+    height: 600px;
+    width: 80%;
+    background-color: white;
+    margin-left: 170px;
+    padding-top: 20px;
+
+}
+
+.car-info .row {
+    display: flex;
+    padding-left: 0px;
+    height: 100px;
+}
+
+.car-info .row .row1 {
+    padding: 20px 20px;
+    height: 600px;
+    width: 35%;
+    background-color: rgba(210, 208, 208, 0.5);
+
+
+
+
+}
+
+.car-info .row .row2 {
+    padding: 20px 20px;
+    height: 200px;
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+
+
+}
+
+.car-info .row .row2 img {
+    height: 600px;
+    width: 800px;
+
+
+}
+
+.card .row {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust the spacing between the elements */
+}
+
+.card .row3,
+.card .row4 {
+    flex: 1;
+    /* Distribute available space equally between row3 and row4 */
+}
+
+/*================= Add Car Section ================*/
+.add-car {
+    background-color: rgb(104, 202, 235);
+    font: size 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-car h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-car label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-car input[type="text"],
+.add-car input[type="number"],
+.add-car textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-car textarea {
+    resize: vertical;
+}
+
+.add-car button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-car button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+footer {
+    background-color: #1c1b1b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
