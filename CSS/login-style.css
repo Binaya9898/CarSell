@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
 }
 
 section {
@@ -22,34 +22,26 @@ section {
 section.side {
     background: url(./images/bk.png) no-repeat;
     background-size: 100% 102%;
-    padding-top: 100px;
-
 }
 
 .side img {
-    width: 70%;
-    max-width: 80%;
-    margin-top: 200px;
-    /* border-radius: 8px;
-    box-shadow: 8px solid blue; */
+    margin-top:200px ;
+    width: 90%;
+    max-width: 90%;
+    height: 80%;
+    
 }
 
-#logo {
+#logo{
     border-radius: 30px;
     box-sizing: border-box;
     box-shadow: -5px 5px 5px 0px rgb(241, 241, 243);
     z-index: -1;
-    /* padding-bottom:20px ; */
-    /* size: 600px; */
-
+    padding-bottom:10px ;
 }
 
 .login-container {
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px 5px rgb(238, 226, 245);
-    z-index: 5;
-    border-radius: 30px;
-    max-width: 550px;
+    max-width: 450px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -58,7 +50,7 @@ section.side {
 
 .title {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
@@ -67,17 +59,17 @@ section.side {
 .separator {
     width: 150px;
     height: 4px;
-    background-color: #843bc7;
+    background-color: #ed752a;
     margin: 24px;
 }
 
-/* .welcome-message {
+.welcome-message {
     text-align: center;
     font-size: 1.1em;
     line-height: 28px;
     margin-bottom: 30px;
     color: #696969;
-} */
+}
 
 .login-form {
     width: 100%;
@@ -88,7 +80,7 @@ section.side {
 .form-control {
     width: 100%;
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
 }
 
 input,
@@ -107,17 +99,21 @@ input {
     padding: 14px 64px;
 }
 
-input~i {
+input:focus{
+    background-color: #f7d332;
+}
+input ~ i {
     position: absolute;
     left: 32px;
     top: 50%;
     transform: translateY(-50%);
     color: #888;
-    transition: color 0.4s;
+    transition: color   0.4s;
 }
 
-input:focus~i {
-    color: #843bc7;
+input:focus ~ i {
+    color: #2107b1;
+    /* background-color: #f3e65b; */
 }
 
 button.submit {
@@ -127,7 +123,7 @@ button.submit {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    background-image: linear-gradient(to right, #8b33c5, #15a0e1);
+    background-image: linear-gradient(to right, #e65c29, #15a0e1);
     cursor: pointer;
     transition: opacity 0.4s;
 }
