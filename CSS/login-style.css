@@ -130,6 +130,8 @@ button.submit {
 
 button.submit:hover {
     opacity: 0.9;
+    background-image: linear-gradient(to right, #8aefe7, #15a0e1);
+    color: #2107b1;
 }
 
 /* ----  Responsiveness   ----  */

@@ -5,9 +5,9 @@
                 <span style="color: rgb(347, 189, 11);">Car</span>
                 <span style="color: rgb(104, 202, 235);">Sell</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ">
@@ -18,7 +18,7 @@
                         <a class="nav-link text-light" href="<?php echo $site_url .'AboutUs/aboutus.php';?>">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="addCar.html">Add Car</a>
+                        <a class="nav-link text-light" href="<?php echo $site_url .'AddCar/addcar.php';?>">Add Car</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="<?php echo $site_url .'Authentication/registration.php';?>">Seller Registration</a>

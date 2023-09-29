@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,7 @@
             <div class="separator"></div>
             <p class="welcome-message">Please, provide registration credential to register</p>
 
-            <form class="login-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <form class="login-form" action="insertuser.php" method="POST">
             <div class="form-control">
                     <input type="text" placeholder="Name" name="name">
                     <i class="fas fa-user"></i>
@@ -49,7 +52,7 @@
                     <input type="password" placeholder="Password" name="password">
                     <i class="fas fa-lock"></i>
                 </div>
-                <button id="signupBtn" type="submit" class="submit" disabled name="submit">Register</button>
+                <button id="signupBtn" type="submit" class="submit"  name="submit">Register</button>
             </form>
         </div>
     </section>

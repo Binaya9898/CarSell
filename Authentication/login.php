@@ -1,3 +1,29 @@
+<?php
+session_start();
+include '../Db_Connection/Db_Connection.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $sql = "SELECT * FROM Seller_Registration WHERE Username = '$username' AND Password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['username'] = $row['Username'];
+            $_SESSION['password'] = $row['Password'];
+            $_SESSION['id'] = $row['Id'];
+            header("location:../index.php");
+        } else {
+            echo "Invalid username or password";
+        }
+    } else {
+        echo mysqli_error($conn);
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +50,7 @@
 
             <form class="login-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <div class="form-control">
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" placeholder="Username" name="username">
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="form-control">

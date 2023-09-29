@@ -1,6 +1,6 @@
 <?php
-// include './Db_Connection/Db_connection.php';
 include './Db_Connection/route_config.php';
+include './Db_Connection/Db_Connection.php';
 ?>
 
 
@@ -14,9 +14,7 @@ include './Db_Connection/route_config.php';
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
-   
+  
 
 </head>
 
@@ -103,13 +101,15 @@ include './Db_Connection/route_config.php';
       <?php
       include './Navigation/footer.php';
       ?>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha384-KyZXEAg3QhqLMpG8r+CGs6b6A7x6iK6UcEd3a8tWgGvgpVC8F8CVB3W5p5yW4a2z" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-d7I10kLh1OLJvI1z2k2IsU08Yjr6VxLhz5CXP7pZKc9R5KVp5R1f1O7U5z04p3fr5" crossorigin="anonymous">
-    </script>
+    </script> -->
 
 
 </html>

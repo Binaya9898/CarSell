@@ -26,6 +26,20 @@ include '../Db_Connection/route_config.php';
     transform: translate(-50%, -50%) scaleX(1);
     z-index: -1;
     margin-top: 15rem;
+   
+}
+.abt h1{
+    padding-top: 18rem;
+    /* margin-top: 25rem; */
+    padding-left: 50rem;
+
+    font-size: 100px;
+    font-weight: 700;
+    color: black;
+}
+.abt h1:hover{
+    color: red ;
+    /* transform: scale(-1); */
 }
 </style>
 </head>
@@ -36,9 +50,7 @@ include '../Db_Connection/route_config.php';
     </section>
 <section>
 <div  class="abt">
-    <div class="container background-dark">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem officia id sit minima cupiditate facere ratione omnis delectus consequuntur eius eveniet doloribus, totam illo laudantium a provident eos! Officiis!
-    </div>
+<h1>About Us</h1>
 </div>
 
 </section>
