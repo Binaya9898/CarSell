@@ -24,16 +24,33 @@
                         <a class="nav-link text-light" href="<?php echo $site_url .'Authentication/registration.php';?>">Seller Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="<?php echo $site_url .'Authentication/login.php';?>">Seller Login</a>
-                    </li>
+    <?php if (!isset($_SESSION["username"]) || !isset($_SESSION["password"])) : ?>
+        <a class="nav-link text-light" href="<?php echo $site_url .'Authentication/login.php';?>">Seller Login</a>
+        <?php else : ?>
+            <span class="nav-link text-light">Welcome, <?php echo $_SESSION["username"]; ?></span>
+    <?php endif; ?>
+</li>
+
                 </ul>
                 <form class="d-flex mx-4">
                     <input class="form-control me-2 mx-4" type="search" placeholder="Search Here" id="search-input">
-                    <button class="btn btn-outline-success" type="submit" id="search-button">Search</button>
+                    <a class="btn btn-outline-success" id="search-button">Search</a>
                 </form>
             </div>
         </div>
     </nav>
+    <script>
+    document.getElementById('search-button').addEventListener('click', function (event) {
+        event.preventDefault();
+        var siteurl="http://localhost/CarSell/Cars/"
+
+        var inputValue = document.getElementById('search-input').value;
+
+        var url = siteurl+'cars.php?search=' + encodeURIComponent(inputValue);
+
+        window.location.href = url;
+    });
+</script>
     
 
     </header>
